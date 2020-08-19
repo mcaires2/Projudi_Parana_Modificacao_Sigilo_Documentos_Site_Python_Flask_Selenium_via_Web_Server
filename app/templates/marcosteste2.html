@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Selenium Automação - Sigilo Modificação</title>
+        <!-- <link rel="stylesheet" href="css/Coordenadas.css"> -->
+        <link rel="stylesheet" href="../static/sigilo.css">
+
+</head>
+
+<body>
+        <div id="containerApoio" hidden>0</div>
+
+        <div id='containerGeral'>
+                <form id="DadosSigilo" action="marcosluz.php" method="POST" enctype="">
+                        <fieldset id="uploadarquivo">
+                                <Legend id="uploadarquivolg">Manipulação Dados Selenium Projudi - Troca Sigilo
+                                        Documentos - Feedback Automação Selenium Server</Legend>
+
+                                <div id="mensagem3" class="mensagem">Resultado da Modificação Sigilo:</div>
+                                <div id="mensagem4" class="mensagem"> {{ feedback }} </div>
+                                <input id='botaoconfirmacao2' class="processonr" type="button" value="Voltar Início"
+                                        onclick="VoltarHome()">
+
+
+                        </fieldset>
+                </form>
+
+        </div>
+
+
+        <script src="../static/Apoio.js"></script>
+        <script src="../static/chamarSelenium.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+
+
+body{
+
+    background-color: darkcyan;
+}
+
+#coordenadasfield{
+
+    background-color: cornflowerblue;
+    font-size: x-large;
+    font-weight: bold;
+    font: caption;
+
+
+}
+
+#uploadLuzFormAudio{
+
+    margin-bottom: 20px;
+}
+
+
+
+#uploadarquivo,#uploadarquivo2 {
+
+BACKGROUND-COLOR: cornflowerblue;
+
+}
+
+#uploadarquivolg,#uploadarquivolg2{
+    margin-top: auto;
+    margin-bottom: 15px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#botaoconfirmacao,#botaoconfirmacao2 {
+
+    background-color: black;
+    color: whitesmoke;
+    font-family: inherit;
+    margin: 12px 1px 4px -1px;
+    display: block;
+
+
+}
+
+
+
+#idsenha{
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#processolb, #sequencialb, #nivellb,#subsequencialb, #loginlb,#juizolb,#labelsenha{
+    font-weight: 600;
+}
+
+.labelform{
+
+    display: block;
+}
+
+#labelsenha{
+
+    margin-top: 45px;
+}
+
+#sigilo,#subsequencial{
+
+margin-top: 5px;
+
+}
+
+#uploadarquivo2{
+
+    margin-top: 15px;
+    text-transform: capitalize;
+    display: none;
+}
+
+.mensagem {
+
+    font-size: 17px;
+    margin-left: 29px;
+    margin-top: 5px;
+    
+}
+
+#mensagem1{
+    
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 13px;
+    margin-left: 60px;
+    text-transform: capitalize;
+}
+
+#mensagem2{
+    
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: -25px;
+    margin-left: 60px;
+    text-transform: capitalize;
+}
+
+#mensagem4{
+
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 13px;
+    margin-left: 60px;
+    text-transform: capitalize;
+}

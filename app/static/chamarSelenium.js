@@ -1,0 +1,8 @@
+
+function ajaxAutomacaoSeleniumFormSubmit() {
+
+    $("#DadosSigilo").submit()
+
+}
+
+

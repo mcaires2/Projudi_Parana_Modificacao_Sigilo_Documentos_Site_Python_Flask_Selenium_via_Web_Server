@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Selenium Automação - Sigilo Modificação</title>
+        <!-- <link rel="stylesheet" href="css/Coordenadas.css"> -->
+        <link rel="stylesheet" href="../static/sigilo.css">
+
+</head>
+
+<body>
+        <div id="containerApoio" hidden>0</div>
+
+        <div id='containerGeral'>
+                <form id="DadosSigilo" action="marcosluzform" method="POST" enctype="">
+                        <fieldset id="uploadarquivo">
+                                <Legend id="uploadarquivolg">Manipulação Dados Selenium Projudi Paraná - Troca Sigilo
+                                        Documentos - por
+                                        Marcos Luz</Legend>
+
+                                <label id='processolb' class="labelform" for='processo'>Processo Numero:</label>
+                                <input id='processo' class="processon" name='processoNr' type="input"
+                                        value="" placeholder="Número Único">
+                                <p></p>
+
+
+                                <label id='sequencialb' class="labelform" for='sequencial'>Sequencial Número:</label>
+                                <input id='sequencial' class="processon" name='sequencialNr' type="input" value=""
+                                        placeholder="Nr Sequencial">
+                                <p></p>
+
+                                <label id='nivellb' class="labelform" for='sigilo'>Segredo:</label>
+                                <select name="sigiloNivel" class="processon" id="sigilo">
+                                        <option value="Segredo" selected="selected">Segredo</option>
+                                        <option value="Sigilo Mínimo">Sigilo Mínimo</option>
+                                        <option value="Sigilo Médio">Sigilo Médio</option>
+                                        <option value="Sigilo Intenso">Sigilo Intenso</option>
+                                        <option value="Sigilo Absoluto">Sigilo Absoluto</option>
+                                </select>
+
+                                <p></p>
+
+                                <label id='subsequencialb' class="labelform" for='subsequencial'>Sub_Sequencial
+                                        'x.1' Incluído?:</label>
+                                <select name="subSequencial" class="processon" id="subsequencial">
+                                        <option value="S" selected="selected">Sim</option>
+                                        <option value="N">Não</option>
+                                </select>
+                             
+                                <p></p>
+
+                                <label id='loginlb' class="labelform" for='login'>Login:</label>
+                                <input id='login' class="processon" name='login' type="input" value=""
+                                        placeholder="Login Projudi">
+                                <p></p>
+
+                                <label id='juizolb' class="labelform" for='juizo'>Vara_Juízo:</label>
+                                <input id='juizo' class="processon" name='juizo' type="input"
+                                        value="" size="25"
+                                        placeholder="Ex.: 7ª Vara Cível de Londrina">
+                                <p></p>
+
+
+                                <label id='labelsenha' class="labelform" for='idsenha'>Senha:</label>
+                                <input id='idsenha' type='password' name='password' size='44' value=''
+                                        placeholder="Senha Projudi" required>
+                                <p></p>
+                                <input id='botaoconfirmacao' class="processonr" type="button" value="ModificarSigilo"
+                                        onclick="ProsseguirAutomacao()">
+                                <p></p>
+                        </fieldset>
+                </form>
+
+        </div>
+
+        <div id='containerGeral2'>
+                <div id="DadosSigilo2">
+                        <fieldset id="uploadarquivo2">
+                                <Legend id="uploadarquivolg2">Manipulaçao Dados Selenium - Automação em Execução</Legend>
+                                <div id="mensagem1" class="mensagem">Job Iniciado</div>
+                                <div id="mensagem2" class="mensagem">Aguarde feedback da ferramenta em instantes...</div>
+                                
+                        </fieldset>
+                </div>
+
+        </div>
+
+       
+
+
+        <script src="../static/Apoio.js"></script>
+        <script src="../static/chamarSelenium.js"></script>
+
+</body>
+
+</html>
