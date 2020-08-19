@@ -62,7 +62,7 @@ Depois que você fizer o deploy num ambiente de produção tudo isto ficará no 
 
 
 
-English Use Summary:
+# English Use Summary:
 
 Jquery and Javascript already embeded on the html code
 
