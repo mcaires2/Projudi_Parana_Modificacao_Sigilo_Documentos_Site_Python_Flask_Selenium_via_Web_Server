@@ -65,9 +65,15 @@ Depois que você fizer o deploy num ambiente de produção tudo isto ficará no 
 English Use Summary:
 
 Jquery and Javascript already embeded on the html code
+
 Install chromeDriver from https://chromedriver.chromium.org/downloads
+
 Take notice the dir where it will be installed on your computer...
+
 After instalaltion do the following:
+
 Open the file sigilo_flask_selenium_funcoes.py and change the full path where the chromedriver.exe has been installed on your windows machine.
+
 (line 53)
+
 driver= webdriver.Chrome(r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedriver.exe') # COLOQUE AQUI O CAMINHO ABSOLUTO DO WINDOWS DE ONDE O SELENIUM CHROME DRIVER.EXE ESTÁ INSTALADO, NO LINUX ELE VAI PARA O PATH AO SER INSTALADO VIA PIP
