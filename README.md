@@ -6,8 +6,11 @@ O pacote deste github é o ambiente que usei no meu visual studio code
 Abra o terminal via Visual Studio Code e instale: 
 
 pip install pip
+
 pip install selenium 
+
 pip install flask
+
 
 (um de cada vez na linha de comando)
 
@@ -48,7 +51,7 @@ Pronto, o site está rodando na sua máquina e pronto para uso.
 Veja o vídeo deste projeto funcionando no link 
 
 
-link do vídeo....
+# link do vídeo....
 
 https://drive.google.com/file/d/1xk2-_TQuv3qPCDfcpXUYleYgWL6dgWFe/view?usp=sharing
 
