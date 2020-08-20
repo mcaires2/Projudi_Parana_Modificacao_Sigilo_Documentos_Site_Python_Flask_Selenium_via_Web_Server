@@ -28,7 +28,7 @@ Depois de finalizar a instalação do ChromeDriver.exe abra o arquivo deste proj
 Você pode apagar a menção do caminho absoluto do na linha 53 do script do python  se o ChromeDriver.exe já estiver no PATH do seu sistema operacional Linux ou Windows
 
 # (line 53)
-driver= webdriver.Chrome(r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedriver.exe') 
+driver= webdriver.Chrome(r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedriver.exe') **
 
 se estiver no Path
 driver = webdriver.Chrome()
@@ -80,3 +80,18 @@ Open the file sigilo_flask_selenium_funcoes.py and change the full path where th
 (line 53)
 
 driver= webdriver.Chrome(r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedriver.exe') # COLOQUE AQUI O CAMINHO ABSOLUTO DO WINDOWS DE ONDE O SELENIUM CHROME DRIVER.EXE ESTÁ INSTALADO, NO LINUX ELE VAI PARA O PATH AO SER INSTALADO VIA PIP
+
+
+# ** Colocar o Selenium no Headless Mode para poder fazer o deploy em ambiente linux sem display...
+
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+
+driver= webdriver.Chrome(chrome_options=chrome_options, executable_path="r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedriver.exe'")
+
