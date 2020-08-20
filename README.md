@@ -11,6 +11,8 @@ pip install selenium
 
 pip install flask
 
+pip install python-dotenv
+
 
 (um de cada vez na linha de comando)
 
