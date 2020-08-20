@@ -24,7 +24,7 @@ Além destas ferramentas você vai precisar do Jquery e Javascript que já são 
 Você vai precisar instalar o chromeDriver na sua máquina, veja como fazer em:
 https://chromedriver.chromium.org/downloads
 
-(se estiver no ambiente Ubuntu linux instale digitando o seguinte na linha do CLI: apt install chromium-chromedriver)
+(se estiver no ambiente Ubuntu linux instale digitando o seguinte na linha do CLI: sudo apt install chromium-chromedriver)
 
 (dica, anote o diretório onde o chromeDriver.exe foi instalado)
 
