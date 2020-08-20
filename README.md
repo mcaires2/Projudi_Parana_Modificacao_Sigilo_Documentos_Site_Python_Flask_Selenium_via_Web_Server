@@ -15,6 +15,7 @@ pip install python-dotenv
 
 
 (um de cada vez na linha de comando)
+(no ambiente Ubuntu linux vc tem de usar o comando pip3 ao invés de pip)
 
 Não esqueça de instalar o python 3 na sua máquina também...
 
@@ -22,6 +23,8 @@ Além destas ferramentas você vai precisar do Jquery e Javascript que já são 
 
 Você vai precisar instalar o chromeDriver na sua máquina, veja como fazer em:
 https://chromedriver.chromium.org/downloads
+
+(se estiver no ambiente Ubuntu linux instale digitando o seguinte na linha do CLI: apt install chromium-chromedriver)
 
 (dica, anote o diretório onde o chromeDriver.exe foi instalado)
 
