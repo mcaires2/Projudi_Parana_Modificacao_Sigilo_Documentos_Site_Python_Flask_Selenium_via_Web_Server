@@ -105,3 +105,51 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 driver= webdriver.Chrome(chrome_options=chrome_options, executable_path="r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedriver.exe'")
 
 
+# Orientações para instalar a versão do Ubuntu em Modo Desenvolvedor mas Funcional em Cloud
+
+
+Ambiente Virtual Ubuntu Linux
+
+1 apt install python3-venv
+
+2 sudo apt install python3-venv
+
+ passo 1 e 2 não precisa se repetir, apenas uma vez na máquina ubuntu
+
+4 cd /home/mcaires2/projetos     # entrando no diretório onde vou criar o ambiente virtual (pode mudar)
+
+5 python3.6 -m venv sigilo_site   # sigilo_site aqui é o nome do ambiente virtual que criei, pode ser qq nome
+
+6 source sigilo_site/bin/activate  # ativa o cursor para dentro do ambiente virtual, detalhe: esteja dentro do seu diretório  qdo ativar isso  (no nosso caso teste  cd /home/mcaires2/projetos)
+
+↓↓↓ - a partir da ativação do ambiente virtual vc pode passar a usar só pip ou python porque o ambiente virtual já foi ativado para o python3 ( no passo 2)
+
+7 pip install wheel
+8 pip install uwsgi flask
+9 pip install python-dotenv
+
+ATENÇÃO:NÃO ESQUECER DE LIBERAR A PORTA 5000 NA MÁQUINA  UBUNTU (sudo ufw allow 5000)NÃO ESQUECER DE LIBERAR A PORTA 5000 NO FIREWALL DO GOOGLE CLOUD OU SEMELHANTE (ENTRADA E SAÍDA)
+
+NAO USAR O DIR DO AMBIENTE VIRTUAL PARA SALVAR SEUS ARQUIVOS DO PROJETO (no nosso caso tudo tem de ser salvo no cd /home/mcaires2/projetos/ enquanto o ambiente virtual que criamos fica no cd /home/mcaires2/projetos/sigilo_site
+
+10 Extrair os arquivos do arquivo .rar e salvar a estrutura de diretórios e files como ali mas dentro do diretório /home/mcaires2/projetos/
+
+11 - Navegue até o diretório  cd /home/mcaires2/projetos/ (local que está salvo Sigilo_Flask_Selenium.py)   e  digite python3 Sigilo_Flask_Selenium.py
+
+
+12 - Você verá a mensagem no prompt de comando:
+
+3. Você verá a mensagem:
+* Serving Flask app "meuprojeto" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+
+
+13 - Pronto, abora é só substituir para o IP da Sua Máquina em Cloud e manter :5000 (que é a porta de comunicação). No nosso exemplo ficou http://34.75.217.110:5000/
+
+
+
+
