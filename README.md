@@ -82,7 +82,7 @@ Open the file sigilo_flask_selenium_funcoes.py and change the full path where th
 driver= webdriver.Chrome(r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedriver.exe') # COLOQUE AQUI O CAMINHO ABSOLUTO DO WINDOWS DE ONDE O SELENIUM CHROME DRIVER.EXE ESTÁ INSTALADO, NO LINUX ELE VAI PARA O PATH AO SER INSTALADO VIA PIP
 
 
-# ** Colocar o Selenium no Headless Mode para poder fazer o deploy em ambiente linux sem display...
+# ** Colocar o Selenium no Headless Mode ...
 
 
 from selenium import webdriver
