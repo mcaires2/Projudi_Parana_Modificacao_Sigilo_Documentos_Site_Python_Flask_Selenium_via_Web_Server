@@ -38,6 +38,24 @@ driver= webdriver.Chrome(r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedri
 se estiver no Path
 driver = webdriver.Chrome()
 
+se estiver no Ubuntu e quiser ativar o modo headless porque não tem display nas máquinas em cloud inserir dentro da função Flask_Selenium(...)
+
+from selenium.webdriver.chrome.options import Options
+
+chrome_options = Options()
+
+chrome_options.add_argument('--headless')
+
+chrome_options.add_argument('--no-sandbox')
+
+chrome_options.add_argument('--disable-dev-shm-usage')
+
+driver= webdriver.Chrome(r'C:\Users\marcos\AppData\Local\SeleniumBasic\chromedriver.exe')
+
+
+
+driver= webdriver.Chrome(chrome_options=chrome_options, executable_path="r'user/lib/bin/chromedriver'")
+
 Após tudo instalado, abra o terminal pelo Visual Studio Code e digite
 
 flask run
